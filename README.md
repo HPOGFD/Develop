@@ -1,34 +1,33 @@
-#README Generator ✨
 
-#Description
-A simple Node.js CLI tool that helps you quickly generate a professional README.md file for your projects. Just answer a few questions, and boom! 🎉
+# README generator
 
-#Features
-🎤 Interactive prompts to gather project info.
-📄 Automatically generates a markdown README.
-🚀 Easy to use from the command line.
+## Description
+generate a readme file
 
-#Installation
-Clone the repo:
-git clone "link goes here"
+## Problem Solved
+time consuming to write a readme file
 
+## Installation
+follow repo
 
-#Usage
-Run the generator:
-Answer the prompts (e.g., project name, description, installation steps), and a README.md will be created in your folder. 📄
+## Usage
+need VS 
 
-#Example
+## Screenshot
+![Screenshot](no)
 
-? What is the project name? README Generator
-? What is the description of the project? A tool to generate README files
-? What are the installation instructions? Run 'npm install'
+## Contributing
+Contributions are not accepted at this time.
 
+## Tests
+run it
 
-#Contributing
-Fork the repo 🍴
-Create a branch 🌱
-Push your changes ⬆️
-Open a pull request 💬
+## License
+No license provided.
 
-#Author
-Created by Harry P Oyarvide 👨‍💻
+## Contact
+For questions or support, please contact: pay;
+
+## Acknowledgments
+no
+  
