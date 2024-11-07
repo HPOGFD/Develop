@@ -2,6 +2,8 @@
 import inquirer from "inquirer";
 import colors from "colors";
 import fs from "fs";
+import generateMarkdown from './generateMarkdown.js';
+
 
 // TODO: Create an array of questions for user input
 const questions = [
