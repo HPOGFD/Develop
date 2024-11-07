@@ -10,11 +10,45 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+# ${data.name}
 
-`;
+## Description
+${data.description}
+
+## Problem Solved
+${data.problem}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Screenshot
+${data.screenshot ? `![Screenshot](${data.screenshot})` : 'No screenshot provided.'}
+
+## Contributing
+${data.contributing === 'Yes' ? 'Contributions are welcome!' : 'Contributions are not accepted at this time.'}
+
+## Tests
+${data.test}
+
+## License
+${data.license ? `This project is licensed under the ${data.license} license.` : 'No license provided.'}
+
+## Contact
+For questions or support, please contact: ${data.contact}
+
+## Acknowledgments
+${data.acknowledgments}
+  `;
 }
 
 export default generateMarkdown;
+
