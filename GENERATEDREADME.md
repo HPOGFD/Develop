@@ -1,33 +1,34 @@
 
-# q
+# paul
 
 ## Description
-q
+f
 
 ## Problem Solved
-q
+f
 
 ## Installation
-q
+f
 
 ## Usage
-q
 
-## Screenshot
-![Screenshot](q)
 
 ## Contributing
 Contributions are not accepted at this time.
 
-## Tests
-undefined
-
 ## License
 This project is licensed under the MIT license.
 
+## GitHub
+f
+
 ## Contact
-For questions or support, please contact: 
+f
 
 ## Acknowledgments
-q
-  
+f
+
+## License Badge
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT license.
