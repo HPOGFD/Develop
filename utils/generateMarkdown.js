@@ -36,19 +36,21 @@ ${data.screenshot ? `![Screenshot](${data.screenshot})` : 'No screenshot provide
 ## Contributing
 ${data.contributing === 'Yes' ? 'Contributions are welcome!' : 'Contributions are not accepted at this time.'}
 
-## Tests
-${data.test}
-
 ## License
 ${data.license ? `This project is licensed under the ${data.license} license.` : 'No license provided.'}
 
+## GitHub
+${data.GitHub}
+
 ## Contact
-For questions or support, please contact: ${data.contact}
+${data.contact}
+
 
 ## Acknowledgments
 ${data.acknowledgments}
-  `;
+`;
 }
+
 
 export default generateMarkdown;
 

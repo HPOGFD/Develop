@@ -42,20 +42,22 @@ const questions = [
       name: 'contributing',
       message: colors.brightMagenta('Do you welcome contributions to the project? (Yes/No)'),
     },
+   
     {
-      type: 'input',
-      name: 'test',
-      message: colors.brightMagenta('How can users test the project?'),
-    },
-    {
-      type: 'input',
+      type: 'list', 
       name: 'license',
-      message: colors.brightMagenta('What license is this project under?'),
+      message: colors.brightMagenta('Which license is this project under?'),
+      choices: ['MIT', 'GPLv3', 'Apache 2.0', 'BSD 3-Clause', 'None'],
     },
     {
       type: 'input',
+      name: 'GitHub',
+      message: colors.brightMagenta('Enter your GitHub username:'),
+    },
+    {
+      type: 'Email',
       name: 'contact',
-      message: colors.brightMagenta('Who should users contact for questions or support? (Provide an email or link)'),
+      message: colors.brightMagenta('Enter your email address?'),
     },
     {
       type: 'input',
@@ -77,7 +79,7 @@ function init() {
     inquirer.prompt(questions)
       .then((responses) => {
         const readmeContent = generateMarkdown(responses); // Generate markdown content
-        writeToFile("README.md", readmeContent); // Write to README.md
+        writeToFile("GENERATEDREADME.md", readmeContent); // Write to README.md
       })
       .catch((error) => console.error(error));
   }
