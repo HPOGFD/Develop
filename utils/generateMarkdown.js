@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to render the license badge based on the selected license
 function renderLicenseBadge(license) {
   switch (license) {
     case 'MIT':
@@ -15,26 +14,51 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// Function to render the license link based on the selected license
+function renderLicenseLink(license) {
+  switch (license) {
+    case 'MIT':
+      return 'https://opensource.org/licenses/MIT';
+    case 'Apache 2.0':
+      return 'https://opensource.org/licenses/Apache-2.0';
+    case 'GPL v3':
+      return 'https://www.gnu.org/licenses/gpl-3.0';
+    case 'BSD 3-Clause':
+      return 'https://opensource.org/licenses/BSD-3-Clause';
+    default:
+      return '';
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// Function to render the License section in the README
+function renderLicenseSection(license) {
+  if (!license) {
+    return ''; // If no license is selected, return an empty string
+  }
+  return `
+## License
+This project is licensed under the [${license}](${renderLicenseLink(license)}) license.
+`;
+}
 
-
-
-// TODO: Create a function to generate markdown for README
+// Function to generate the markdown for the README
 function generateMarkdown(data) {
   return `
-# ${data.name}
+# ${data.title}
+
+${renderLicenseBadge(data.license)}
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description
 ${data.description}
-
-## Problem Solved
-${data.problem}
 
 ## Installation
 ${data.installation}
@@ -42,35 +66,19 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## Contributing
-${data.contributing === 'Yes' ? 'Contributions are welcome!' : 'Contributions are not accepted at this time.'}
-
 ## License
-${data.license ? `This project is licensed under the ${data.license} license.` : 'No license provided.'}
+${renderLicenseSection(data.license)}
 
-## GitHub
-${data.GitHub}
+## Contributing
+${data.contributing}
 
-## Contact
-${data.contact}
+## Tests
+${data.tests}
 
-## Acknowledgments
-${data.acknowledgments}
-
-## License Badge
-${renderLicenseBadge(data.license)}
-
-This project is licensed under the ${data.license} license.
+## Questions
+If you have any questions about the project, please contact me at ${data.email}.  
+You can view my GitHub profile at [${data.GitHub}](https://github.com/${data.GitHub}).
 `;
 }
 
 export default generateMarkdown;
-
-
-
-
-
-
-
-
-
