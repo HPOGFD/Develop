@@ -34,11 +34,6 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'screenshot',
-      message: colors.brightMagenta('Do you have any screenshots to include? (Provide paths or URLs)'),
-    },
-    {
-      type: 'input',
       name: 'contributing',
       message: colors.brightMagenta('Do you welcome contributions to the project? (Yes/No)'),
     },

@@ -30,9 +30,6 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## Screenshot
-${data.screenshot ? `![Screenshot](${data.screenshot})` : 'No screenshot provided.'}
-
 ## Contributing
 ${data.contributing === 'Yes' ? 'Contributions are welcome!' : 'Contributions are not accepted at this time.'}
 
